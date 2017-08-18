@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css" href="./css/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="./css/bootstrap/css/bootstrap-theme.min.css" />
+
+<script type="text/javascript" src="./js/libs/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="./js/libs/lodash-2.4.1.js"></script>
+
+</head>
+
+<body>
+	<div id="base">
+		<table class="table table-bordered" style="background-color: white;">
+			<thead>
+				<tr>
+					<td><strong>ID</strong></td>
+					<td><strong>Descricao</strong></td>
+					<td><strong>Quantidade</strong></td>
+					<td><strong>Valor R$</strong></td>
+					<td><strong>obs</strong></td>
+					<td><strong>Remover</strong></td>
+				</tr>
+			</thead>
+			<tbody id="tableCarriho">
+			</tbody>		
+		</table>
+		<button style="width: 250px; height: 50px;" type="button" class="btn btn-primary" onclick="listProdCarrinho()">Refresh</button>
+		<button style="width: 250px; height: 50px;" type="button" class="btn btn-success" onclick="finalizarCompra()">Finalizar Compra</button>
+	</div>
+
+	<script src="./css/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./css/bootstrap/js/bootstrap.js"></script>
+	<script src="./js/itens.js"></script>
+	<script type="text/javascript" src="./js/carrinho.js"></script>
+
+</body>
+
+</html>

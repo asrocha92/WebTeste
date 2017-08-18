@@ -1,0 +1,100 @@
+body{
+	background-color: black;
+	background-image: url('compras1.jpg');
+	opacity: 0.96;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+    overflow: auto;
+    text-align: center;
+    top: 0;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+/************************
+ ***      cabeçalho    ***
+ ************************/
+
+#header{
+	padding: 5px 8px 5px 8px;
+	color: white;  
+}
+
+#header ul {
+	list-style-type: none;
+	padding: 0 0 0 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+#header li {
+	float: left;
+}
+
+#header li:HOVER{
+	background-color: #111;
+	background-color: #0099cc;
+}
+
+#header li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px 32px 16px 32px;
+	text-decoration: none;
+}
+
+#header li a img{
+	padding: 0px 0px 0px 0px;
+	height: 25px;
+	width: 28px;
+}
+
+#header li a:HOVER {
+	background-color: #111;
+	background-color: #0099cc;
+}
+
+
+/************************
+ ***        Base      ***
+ ************************/
+#base{
+	padding: 5px 8px 5px 8px;
+}
+#base .column {
+    float: left;
+}
+#base .clearfix::AFTER {
+    content: "";
+    clear: both;
+}
+#base .menu {
+    width: 25%;
+}
+#base .content {
+    width: 75%;
+}
+#base .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 8px 5px 8px;
+}
+#base .menu li {
+    padding: 14px;
+    margin-bottom: 3px;
+    background-color: #333;
+    color: #ffffff;
+}
+#base .menu li:HOVER {
+    background-color: #0099cc;
+}
+
+
+.footer {
+    bottom:0;
+    width:100%;
+    position: fixed;
+}
+

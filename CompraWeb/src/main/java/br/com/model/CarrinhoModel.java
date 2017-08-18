@@ -1,4 +1,4 @@
-package br.com.teste.model;
+package br.com.model;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -6,9 +6,9 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
-import br.com.teste.entity.Carrinho;
-import br.com.teste.repository.CarrinhoRepository;
-import br.com.teste.repository.CompraRepository;
+import br.com.entity.Carrinho;
+import br.com.repository.CarrinhoRepository;
+import br.com.repository.CompraRepository;
 
 import java.util.List;
 

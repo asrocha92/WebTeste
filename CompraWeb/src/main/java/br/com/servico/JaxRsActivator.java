@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package br.com.teste.servico;
+package br.com.servico;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

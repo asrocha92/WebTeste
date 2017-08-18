@@ -1,4 +1,4 @@
-package br.com.teste.util;
+package br.com.util;
 
 import java.util.HashMap;
 import java.util.Map;

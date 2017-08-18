@@ -1,4 +1,4 @@
-package br.com.teste.util;
+package br.com.util;
 
 /**
  * Criada Enum para preencher produtos Iniciais

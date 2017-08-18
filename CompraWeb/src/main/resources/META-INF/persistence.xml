@@ -6,9 +6,9 @@
 	<persistence-unit name="CompraWeb">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 
-		<class>br.com.teste.entity.Produto</class>
-		<class>br.com.teste.entity.Carrinho</class>
-		<class>br.com.teste.entity.Compra</class>
+		<class>br.com.entity.Produto</class>
+		<class>br.com.entity.Carrinho</class>
+		<class>br.com.entity.Compra</class>
 
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />

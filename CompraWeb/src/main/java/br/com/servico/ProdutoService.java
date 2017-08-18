@@ -1,4 +1,4 @@
-package br.com.teste.servico;
+package br.com.servico;
 
 import java.util.HashMap;
 import java.util.List;
@@ -14,9 +14,10 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import br.com.teste.entity.Produto;
-import br.com.teste.model.ProdutoModel;
-import br.com.teste.util.ProdutoUtil;
+
+import br.com.entity.Produto;
+import br.com.model.ProdutoModel;
+import br.com.util.ProdutoUtil;
 
 /**
  * Definindo uma classe Rest para produto

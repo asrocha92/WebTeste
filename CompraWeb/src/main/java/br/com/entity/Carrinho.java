@@ -1,4 +1,4 @@
-package br.com.teste.entity;
+package br.com.entity;
 
 import java.io.Serializable;
 import java.util.ArrayList;

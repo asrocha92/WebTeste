@@ -1,4 +1,4 @@
-package br.com.teste.repository;
+package br.com.repository;
 
 import java.util.logging.Logger;
 
@@ -6,7 +6,7 @@ import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 
-import br.com.teste.entity.Compra;
+import br.com.entity.Compra;
 
 /**
  * Compra repository utilizado ao finalizar uma compra

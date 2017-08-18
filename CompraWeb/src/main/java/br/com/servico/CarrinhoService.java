@@ -1,4 +1,4 @@
-package br.com.teste.servico;
+package br.com.servico;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -15,12 +15,13 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import br.com.teste.entity.Carrinho;
-import br.com.teste.entity.Compra;
-import br.com.teste.entity.Produto;
-import br.com.teste.model.CarrinhoModel;
-import br.com.teste.model.ProdutoModel;
-import br.com.teste.util.Util;
+
+import br.com.entity.Carrinho;
+import br.com.entity.Compra;
+import br.com.entity.Produto;
+import br.com.model.CarrinhoModel;
+import br.com.model.ProdutoModel;
+import br.com.util.Util;
 
 /**
  * Carrinho serviço

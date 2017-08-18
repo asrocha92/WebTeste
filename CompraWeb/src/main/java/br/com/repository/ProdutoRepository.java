@@ -1,10 +1,10 @@
-package br.com.teste.repository;
+package br.com.repository;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 
-import br.com.teste.entity.Carrinho;
+import br.com.entity.Produto;
 
 import java.util.logging.Logger;
 
@@ -13,35 +13,25 @@ import java.util.logging.Logger;
  * @author Alex Santos Rocha
  */
 @Stateless
-public class CarrinhoRepository {
+public class ProdutoRepository {
 
     @Inject
     private Logger log;
 
     @Inject
     private EntityManager em;
-    
+
     /**
      * Gravar produto
      * @param p
      * @throws Exception
      */
-    public void gravar(Carrinho carrinho) throws Exception {
-		em.merge(carrinho);
+    public void gravar(Produto produto) throws Exception {
+		em.merge(produto);
 		em.flush();
-		log.info("Produto do Carrinho armazenado.");
+		log.info("Produto " + produto.getDescricao() + ", QTD: "+ produto.getQuantidade() + " registrado ou atulizado.");
     }
-    
-    /**
-     * Se quantidade estiver zerada remove item do carrinho
-     * @param carrinho
-     */
-    public void remover(Carrinho carrinho) {
-		em.remove(carrinho);
-		em.flush();
-    	log.info("Produto removido do Carrinho.");
-    }
-    
+
 	public EntityManager getEm() {
 		return em;
 	}
@@ -49,6 +39,5 @@ public class CarrinhoRepository {
 	public void setEm(EntityManager em) {
 		this.em = em;
 	}
-
  
 }
